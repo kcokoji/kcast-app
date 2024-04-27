@@ -11,6 +11,8 @@ export async function POST(req: NextRequest, res: NextResponse) {
     // Get uploaded file from request body
     const formData = await req.formData();
     const file = formData.get("file") as File;
+    console.log(file);
+
     if (!file) {
       return NextResponse.json(
         { message: "No file uploaded" },
