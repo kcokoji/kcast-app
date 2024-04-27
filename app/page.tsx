@@ -32,7 +32,7 @@ const FileUploadForm = () => {
 
       setSuccessMessage("File uploaded successfully!");
       console.log(response.data); // Handle the response data from the API
-    } catch (error) {
+    } catch (error: any) {
       setErrorMessage("Error uploading file: " + error.message);
     } finally {
       setSelectedFile(null); // Clear the selected file after upload
