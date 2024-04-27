@@ -22,7 +22,7 @@ export async function POST(req: NextRequest, res: NextResponse) {
     const fileName = file.name;
     const contentType = file.type;
     const buffer = await file.arrayBuffer();
-    const userId = "bbf8aa1a-d70f-47a0-ab77-2ee2ad216f15";
+    const userId = "67e5929a-080e-48b0-9abb-efeef6ba47bc";
 
     // Upload file to Supabase storage
     const { data, error } = await supabase.storage
